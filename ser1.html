@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ser1</title>
+  <style>
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.main {
+  margin-top: 30px;
+}
+.bar {
+  fill: red;
+  height: 21px;
+  transition: fill .3s ease;
+  cursor: pointer;
+  font-family: Helvetica, sans-serif;
+}
+.bar:hover,
+.bar:focus {
+  fill: black;
+}
+.bar:hover text,
+.bar:focus text {
+  fill: red;
+}  
+  </style>
+</head>
+<body>
+<div class='navbar'>
+<svg height = '25' width = '1500'>
+<line x1 = '0' y1 = '0' x2 = '1000' y2 = '0' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<line x1 = '0' y1 = '0' x2 = '0' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<line x1 = '1000' y1 = '0' x2 = '1000' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<text x = '1003' y = '23' fill = 'black'>Max 14224</text>
+<line x1 = '200' y1 = '0' x2 = '200' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<text x = '195' y = '23' fill = 'black'>2844</text>
+<line x1 = '400' y1 = '0' x2 = '400' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<text x = '395' y = '23' fill = 'black'>5688</text>
+<line x1 = '600' y1 = '0' x2 = '600' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<text x = '595' y = '23' fill = 'black'>8532</text>
+<line x1 = '800' y1 = '0' x2 = '800' y2 = '10' style = 'stroke:rgb(0,0,0);stroke-width:2'/>
+<text x = '795' y = '23' fill = 'black'>11376</text>
+</svg>
+</div>
+<div class='main'>
+<svg class='chart' width='1500' height='2835' aria-labelledby='title desc' role='img'>
+<g class='bar'>
+<rect width='174' height='19' y='1'></rect>
+<text x='177' y='11' dy='.35em' fill='black'>ГАУЗ НО "Арзамасская стоматологическая поликлиника"</text>
+</g>
+<g class='bar'>
+<rect width='1000' height='19' y='21'></rect>
+<text x='1003' y='31' dy='.35em' fill='black'>ГАУЗ НО "ОСП"</text>
+</g>
+<g class='bar'>
+<rect width='86' height='19' y='41'></rect>
+<text x='89' y='51' dy='.35em' fill='black'>ГАУЗ НО "Стоматологическая поликлиника г. Дзержинска"</text>
+</g>
+<g class='bar'>
+<rect width='164' height='19' y='61'></rect>
+<text x='167' y='71' dy='.35em' fill='black'>ГБУЗ НО  "Городская клиническая больница №34 Советского района г.Нижнего Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='135' height='19' y='81'></rect>
+<text x='138' y='91' dy='.35em' fill='black'>ГБУЗ НО "Ардатовская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='132' height='19' y='101'></rect>
+<text x='135' y='111' dy='.35em' fill='black'>ГБУЗ НО "Арзамасская городская больница №1"</text>
+</g>
+<g class='bar'>
+<rect width='329' height='19' y='121'></rect>
+<text x='332' y='131' dy='.35em' fill='black'>ГБУЗ НО "Арзамасская районная больница"</text>
+</g>
+<g class='bar'>
+<rect width='139' height='19' y='141'></rect>
+<text x='142' y='151' dy='.35em' fill='black'>ГБУЗ НО "Арзамасский родильный дом"</text>
+</g>
+<g class='bar'>
+<rect width='675' height='19' y='161'></rect>
+<text x='678' y='171' dy='.35em' fill='black'>ГБУЗ НО "Балахнинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='466' height='19' y='181'></rect>
+<text x='469' y='191' dy='.35em' fill='black'>ГБУЗ НО "Богородская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='122' height='19' y='201'></rect>
+<text x='125' y='211' dy='.35em' fill='black'>ГБУЗ НО "Большеболдинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='107' height='19' y='221'></rect>
+<text x='110' y='231' dy='.35em' fill='black'>ГБУЗ НО "Большемурашкинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='833' height='19' y='241'></rect>
+<text x='836' y='251' dy='.35em' fill='black'>ГБУЗ НО "Борская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='109' height='19' y='261'></rect>
+<text x='112' y='271' dy='.35em' fill='black'>ГБУЗ НО "Бутурлинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='113' height='19' y='281'></rect>
+<text x='116' y='291' dy='.35em' fill='black'>ГБУЗ НО "Вадская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='63' height='19' y='301'></rect>
+<text x='66' y='311' dy='.35em' fill='black'>ГБУЗ НО "Варнавинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='149' height='19' y='321'></rect>
+<text x='152' y='331' dy='.35em' fill='black'>ГБУЗ НО "Вачская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='85' height='19' y='341'></rect>
+<text x='88' y='351' dy='.35em' fill='black'>ГБУЗ НО "Ветлужская ЦРБ имени доктора Гусева П.Ф."</text>
+</g>
+<g class='bar'>
+<rect width='103' height='19' y='361'></rect>
+<text x='106' y='371' dy='.35em' fill='black'>ГБУЗ НО "Вознесенская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='282' height='19' y='381'></rect>
+<text x='285' y='391' dy='.35em' fill='black'>ГБУЗ НО "Володарская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='153' height='19' y='401'></rect>
+<text x='156' y='411' dy='.35em' fill='black'>ГБУЗ НО "Воротынская центральная районная больница"</text>
+</g>
+<g class='bar'>
+<rect width='645' height='19' y='421'></rect>
+<text x='648' y='431' dy='.35em' fill='black'>ГБУЗ НО "Выксунская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='34' height='19' y='441'></rect>
+<text x='37' y='451' dy='.35em' fill='black'>ГБУЗ НО "Гагинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='410' height='19' y='461'></rect>
+<text x='413' y='471' dy='.35em' fill='black'>ГБУЗ НО "ГДБ №8 г.Дзержинска"</text>
+</g>
+<g class='bar'>
+<rect width='862' height='19' y='481'></rect>
+<text x='865' y='491' dy='.35em' fill='black'>ГБУЗ НО "ГКБ № 40"</text>
+</g>
+<g class='bar'>
+<rect width='770' height='19' y='501'></rect>
+<text x='773' y='511' dy='.35em' fill='black'>ГБУЗ НО "ГКБ №12 "</text>
+</g>
+<g class='bar'>
+<rect width='473' height='19' y='521'></rect>
+<text x='476' y='531' dy='.35em' fill='black'>ГБУЗ НО "Городецкая ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='299' height='19' y='541'></rect>
+<text x='302' y='551' dy='.35em' fill='black'>ГБУЗ НО "Городская больница № 24"</text>
+</g>
+<g class='bar'>
+<rect width='0' height='19' y='561'></rect>
+<text x='3' y='571' dy='.35em' fill='black'>ГБУЗ НО "Городская больница № 35" г.Н.Новгорода</text>
+</g>
+<g class='bar'>
+<rect width='403' height='19' y='581'></rect>
+<text x='406' y='591' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №1 г.Дзержинска"</text>
+</g>
+<g class='bar'>
+<rect width='683' height='19' y='601'></rect>
+<text x='686' y='611' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №2 г.Дзержинска"</text>
+</g>
+<g class='bar'>
+<rect width='251' height='19' y='621'></rect>
+<text x='254' y='631' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №28"</text>
+</g>
+<g class='bar'>
+<rect width='444' height='19' y='641'></rect>
+<text x='447' y='651' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №33"</text>
+</g>
+<g class='bar'>
+<rect width='631' height='19' y='661'></rect>
+<text x='634' y='671' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №37"</text>
+</g>
+<g class='bar'>
+<rect width='179' height='19' y='681'></rect>
+<text x='182' y='691' dy='.35em' fill='black'>ГБУЗ НО "Городская больница №47 Ленинского района"</text>
+</g>
+<g class='bar'>
+<rect width='155' height='19' y='701'></rect>
+<text x='158' y='711' dy='.35em' fill='black'>ГБУЗ НО "Городская клиническая больница 30"</text>
+</g>
+<g class='bar'>
+<rect width='113' height='19' y='721'></rect>
+<text x='116' y='731' dy='.35em' fill='black'>ГБУЗ НО "Городская клиническая больница №38"</text>
+</g>
+<g class='bar'>
+<rect width='322' height='19' y='741'></rect>
+<text x='325' y='751' dy='.35em' fill='black'>ГБУЗ НО "Городская клиническая больница №39"</text>
+</g>
+<g class='bar'>
+<rect width='216' height='19' y='761'></rect>
+<text x='219' y='771' dy='.35em' fill='black'>ГБУЗ НО "Городская клиническая больница №7 имени Е. Л. Березова"</text>
+</g>
+<g class='bar'>
+<rect width='174' height='19' y='781'></rect>
+<text x='177' y='791' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника № 50"</text>
+</g>
+<g class='bar'>
+<rect width='509' height='19' y='801'></rect>
+<text x='512' y='811' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника № 7 Нижегородского района"</text>
+</g>
+<g class='bar'>
+<rect width='170' height='19' y='821'></rect>
+<text x='173' y='831' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника №17 Московского района"</text>
+</g>
+<g class='bar'>
+<rect width='68' height='19' y='841'></rect>
+<text x='71' y='851' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника №21 Нижегородского района"</text>
+</g>
+<g class='bar'>
+<rect width='155' height='19' y='861'></rect>
+<text x='158' y='871' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника №30 Советского района г.Н.Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='83' height='19' y='881'></rect>
+<text x='86' y='891' dy='.35em' fill='black'>ГБУЗ НО "Городская поликлиника №31 Советского района г.Нижнего Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='192' height='19' y='901'></rect>
+<text x='195' y='911' dy='.35em' fill='black'>ГБУЗ НО "Дальнеконстантиновская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='376' height='19' y='921'></rect>
+<text x='379' y='931' dy='.35em' fill='black'>ГБУЗ НО "ДГБ №17 Сормовского района"</text>
+</g>
+<g class='bar'>
+<rect width='171' height='19' y='941'></rect>
+<text x='174' y='951' dy='.35em' fill='black'>ГБУЗ НО "ДГБ №42"</text>
+</g>
+<g class='bar'>
+<rect width='131' height='19' y='961'></rect>
+<text x='134' y='971' dy='.35em' fill='black'>ГБУЗ НО "ДГКБ 27 "Айболит"</text>
+</g>
+<g class='bar'>
+<rect width='263' height='19' y='981'></rect>
+<text x='266' y='991' dy='.35em' fill='black'>ГБУЗ НО "ДГП №39 Советского района г.Н. Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='428' height='19' y='1001'></rect>
+<text x='431' y='1011' dy='.35em' fill='black'>ГБУЗ НО "Детская городская больница №25"</text>
+</g>
+<g class='bar'>
+<rect width='225' height='19' y='1021'></rect>
+<text x='228' y='1031' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника № 18 Ленинского района"</text>
+</g>
+<g class='bar'>
+<rect width='419' height='19' y='1041'></rect>
+<text x='422' y='1051' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника № 19 Канавинского района"</text>
+</g>
+<g class='bar'>
+<rect width='207' height='19' y='1061'></rect>
+<text x='210' y='1071' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника № 48 Советского района г. Нижнего Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='317' height='19' y='1081'></rect>
+<text x='320' y='1091' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника №1"</text>
+</g>
+<g class='bar'>
+<rect width='332' height='19' y='1101'></rect>
+<text x='335' y='1111' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника №22 Нижегородского района"</text>
+</g>
+<g class='bar'>
+<rect width='242' height='19' y='1121'></rect>
+<text x='245' y='1131' dy='.35em' fill='black'>ГБУЗ НО "Детская городская поликлиника №32"</text>
+</g>
+<g class='bar'>
+<rect width='155' height='19' y='1141'></rect>
+<text x='158' y='1151' dy='.35em' fill='black'>ГБУЗ НО "Дзержинский перинатальный центр"</text>
+</g>
+<g class='bar'>
+<rect width='86' height='19' y='1161'></rect>
+<text x='89' y='1171' dy='.35em' fill='black'>ГБУЗ НО "Дивеевская ЦРБ имени академика Н. Н. Блохина"</text>
+</g>
+<g class='bar'>
+<rect width='91' height='19' y='1181'></rect>
+<text x='94' y='1191' dy='.35em' fill='black'>ГБУЗ НО "Княгининская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='101' height='19' y='1201'></rect>
+<text x='104' y='1211' dy='.35em' fill='black'>ГБУЗ НО "Ковернинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='173' height='19' y='1221'></rect>
+<text x='176' y='1231' dy='.35em' fill='black'>ГБУЗ НО "Краснобаковская центральная районная больница"</text>
+</g>
+<g class='bar'>
+<rect width='732' height='19' y='1241'></rect>
+<text x='735' y='1251' dy='.35em' fill='black'>ГБУЗ НО "Кстовская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='172' height='19' y='1261'></rect>
+<text x='175' y='1271' dy='.35em' fill='black'>ГБУЗ НО "Лукояновская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='290' height='19' y='1281'></rect>
+<text x='293' y='1291' dy='.35em' fill='black'>ГБУЗ НО "Лысковская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='136' height='19' y='1301'></rect>
+<text x='139' y='1311' dy='.35em' fill='black'>ГБУЗ НО "Навашинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='892' height='19' y='1321'></rect>
+<text x='895' y='1331' dy='.35em' fill='black'>ГБУЗ НО "Павловская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='144' height='19' y='1341'></rect>
+<text x='147' y='1351' dy='.35em' fill='black'>ГБУЗ НО "Первомайская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='100' height='19' y='1361'></rect>
+<text x='103' y='1371' dy='.35em' fill='black'>ГБУЗ НО "Перевозская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='109' height='19' y='1381'></rect>
+<text x='112' y='1391' dy='.35em' fill='black'>ГБУЗ НО "Пильнинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='202' height='19' y='1401'></rect>
+<text x='205' y='1411' dy='.35em' fill='black'>ГБУЗ НО "Починковская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='309' height='19' y='1421'></rect>
+<text x='312' y='1431' dy='.35em' fill='black'>ГБУЗ НО "Роддом №1"</text>
+</g>
+<g class='bar'>
+<rect width='278' height='19' y='1441'></rect>
+<text x='281' y='1451' dy='.35em' fill='black'>ГБУЗ НО "Родильный дом № 5 Московского района г.Н.Новгорода"</text>
+</g>
+<g class='bar'>
+<rect width='80' height='19' y='1461'></rect>
+<text x='83' y='1471' dy='.35em' fill='black'>ГБУЗ НО "Родильный дом №4 "</text>
+</g>
+<g class='bar'>
+<rect width='279' height='19' y='1481'></rect>
+<text x='282' y='1491' dy='.35em' fill='black'>ГБУЗ НО "Семеновская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='167' height='19' y='1501'></rect>
+<text x='170' y='1511' dy='.35em' fill='black'>ГБУЗ НО "Сергачская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='82' height='19' y='1521'></rect>
+<text x='85' y='1531' dy='.35em' fill='black'>ГБУЗ НО "Сеченовская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='82' height='19' y='1541'></rect>
+<text x='85' y='1551' dy='.35em' fill='black'>ГБУЗ НО "Сокольская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='158' height='19' y='1561'></rect>
+<text x='161' y='1571' dy='.35em' fill='black'>ГБУЗ НО "Сосновская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='82' height='19' y='1581'></rect>
+<text x='85' y='1591' dy='.35em' fill='black'>ГБУЗ НО "Спасская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='56' height='19' y='1601'></rect>
+<text x='59' y='1611' dy='.35em' fill='black'>ГБУЗ НО "Тонкинская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='94' height='19' y='1621'></rect>
+<text x='97' y='1631' dy='.35em' fill='black'>ГБУЗ НО "Тоншаевская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='78' height='19' y='1641'></rect>
+<text x='81' y='1651' dy='.35em' fill='black'>ГБУЗ НО "Уразовская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='240' height='19' y='1661'></rect>
+<text x='243' y='1671' dy='.35em' fill='black'>ГБУЗ НО "Уренская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='543' height='19' y='1681'></rect>
+<text x='546' y='1691' dy='.35em' fill='black'>ГБУЗ НО "ЦГБ г. Арзамаса"</text>
+</g>
+<g class='bar'>
+<rect width='200' height='19' y='1701'></rect>
+<text x='203' y='1711' dy='.35em' fill='black'>ГБУЗ НО "ЦОЗСиР"</text>
+</g>
+<g class='bar'>
+<rect width='170' height='19' y='1721'></rect>
+<text x='173' y='1731' dy='.35em' fill='black'>ГБУЗ НО "Чкаловская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='77' height='19' y='1741'></rect>
+<text x='80' y='1751' dy='.35em' fill='black'>ГБУЗ НО "Шарангская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='244' height='19' y='1761'></rect>
+<text x='247' y='1771' dy='.35em' fill='black'>ГБУЗ НО "Шатковская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='251' height='19' y='1781'></rect>
+<text x='254' y='1791' dy='.35em' fill='black'>ГБУЗ НО "Шахунская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='108' height='19' y='1801'></rect>
+<text x='111' y='1811' dy='.35em' fill='black'>ГБУЗ НО «ГКБ № 10»</text>
+</g>
+<g class='bar'>
+<rect width='323' height='19' y='1821'></rect>
+<text x='326' y='1831' dy='.35em' fill='black'>ГБУЗ НО «Городская поликлиника №1 Приокского района»</text>
+</g>
+<g class='bar'>
+<rect width='253' height='19' y='1841'></rect>
+<text x='256' y='1851' dy='.35em' fill='black'>ГБУЗ НО «Городская поликлиника №4 Канавинского района г.Н.Новгорода»</text>
+</g>
+<g class='bar'>
+<rect width='353' height='19' y='1861'></rect>
+<text x='356' y='1871' dy='.35em' fill='black'>ГБУЗ НО Кулебакская ЦРБ</text>
+</g>
+<g class='bar'>
+<rect width='159' height='19' y='1881'></rect>
+<text x='162' y='1891' dy='.35em' fill='black'>ГБУЗ НО" Воскресенская ЦРБ"</text>
+</g>
+<g class='bar'>
+<rect width='217' height='19' y='1901'></rect>
+<text x='220' y='1911' dy='.35em' fill='black'>ГБУЗ НО"Городская поликлиника №51"</text>
+</g>
+</svg>
+</div>
+</body>
+</html>
